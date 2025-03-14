@@ -16,6 +16,7 @@ class Login(QMainWindow):
         super().__init__()
         uic.loadUi('login.ui', self)
 
+# Hàm hiển thị thông báo
 def msg_box(title, content):
     msg = QtWidgets.QMessageBox()
     msg.setStyleSheet("QLabel{min-width: 200px;}"
@@ -28,6 +29,7 @@ def msg_box(title, content):
     msg.setInformativeText(content)
     msg.exec()
 
+# Chuyển cửa sổ giao diện
 def switch_window(classw):
     global window
     window = classw
